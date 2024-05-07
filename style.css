@@ -1,0 +1,163 @@
+:root {
+    --blue:#002e5f;
+    --grey: #696a6f;
+    --teal: #047E8B;
+    --magenta: #ea088b;
+}
+
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  #image{
+    height: 400px;
+    position: relative;
+    margin-bottom: 50px;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 95%;
+    margin: auto;
+  }
+  h1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    margin-top: auto;
+    position: absolute;
+    bottom: 10px;
+    left: 7.5%
+  }
+  h2 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    margin-bottom: 10px;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+
+  #flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .flextext {
+    flex: 1;
+    min-width: 65%;
+  }
+
+  form {
+    background-color: var(--teal);
+    color: white;
+    padding: 5px;
+    min-height: 150px;
+    min-width: 300px;
+    flex: 1;
+    display: flex;
+    flex-flow: wrap;
+    align-self: center; 
+  }
+  form hr {
+    width: 100%;
+    height: 0;
+    margin: 0;
+    border: 0; 
+  }
+
+  input{
+    flex: 1;
+    width: max-content;
+    margin: 2px;
+  }
+  .shape {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);
+    padding-bottom: 50px;
+  }
+
+  button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  #content {
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+  }
+
+  *{
+    padding:0;
+    margin:0;
+  }
+
+  #nav {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+  }
+  #nav2 {
+    height: 50px;
+    line-height: 50px;
+    background-color: var(--blue);
+    color: white;
+  }
+
+
+.dates input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.dates label {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  font-family: sans-serif, Arial;
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.dates label:hover {
+background-color: var(--grey);
+color: white;
+border-color: white;
+}
+
+.dates input[type="radio"]:focus + label {
+  border: 2px solid #444;
+}
+.dates input[type="radio"]:checked + label {
+  color: white;
+  background-color: var(--magenta);
+  border-color: white;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input,
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #ea088b;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #d1067a;
+}
